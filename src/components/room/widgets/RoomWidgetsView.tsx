@@ -10,6 +10,7 @@ import { UserChooserWidgetView } from './choosers/UserChooserWidgetView';
 import { DoorbellWidgetView } from './doorbell/DoorbellWidgetView';
 import { FriendRequestWidgetView } from './friend-request/FriendRequestWidgetView';
 import { FurnitureWidgetsView } from './furniture/FurnitureWidgetsView';
+import { RoomPollView } from './room-poll/RoomPollView';
 import { RoomThumbnailWidgetView } from './room-thumbnail/RoomThumbnailWidgetView';
 import { RoomToolsWidgetView } from './room-tools/RoomToolsWidgetView';
 import { WordQuizWidgetView } from './word-quiz/WordQuizWidgetView';
@@ -161,6 +162,7 @@ export const RoomWidgetsView: FC<{}> = props =>
             <RoomThumbnailWidgetView />
             <FurniChooserWidgetView />
             <UserChooserWidgetView />
+            <RoomPollView/>
             <WordQuizWidgetView />
             <FriendRequestWidgetView />
         </>

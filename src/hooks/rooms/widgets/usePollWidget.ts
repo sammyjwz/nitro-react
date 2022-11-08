@@ -16,6 +16,7 @@ const usePollWidgetState = () =>
     useRoomSessionManagerEvent<RoomSessionPollEvent>(RoomSessionPollEvent.OFFER, event =>
     {
         const pollEvent = new RoomWidgetPollUpdateEvent(RoomWidgetPollUpdateEvent.OFFER, event.id);
+        console.log('here',event)
 
         pollEvent.summary = event.summary;
         pollEvent.headline = event.headline;
@@ -26,6 +27,7 @@ const usePollWidgetState = () =>
     useRoomSessionManagerEvent<RoomSessionPollEvent>(RoomSessionPollEvent.ERROR, event =>
     {
         const pollEvent = new RoomWidgetPollUpdateEvent(RoomWidgetPollUpdateEvent.ERROR, event.id);
+        console.log('here2',event)
 
         pollEvent.summary = event.summary;
         pollEvent.headline = event.headline;
@@ -35,6 +37,7 @@ const usePollWidgetState = () =>
 
     useRoomSessionManagerEvent<RoomSessionPollEvent>(RoomSessionPollEvent.CONTENT, event =>
     {
+        console.log('here3',event)
         const pollEvent = new RoomWidgetPollUpdateEvent(RoomWidgetPollUpdateEvent.CONTENT, event.id);
 
         pollEvent.startMessage = event.startMessage;
