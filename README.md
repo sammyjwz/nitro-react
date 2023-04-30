@@ -1,1 +1,1 @@
-# Nohabbo custom react client
+# Nohabbo react client
